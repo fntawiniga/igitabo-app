@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ntfreddy.igitaboapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ntfreddy.igitaboapp" version="#{Version}#" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="android-minSdkVersion" value="19"/>
     <preference name="DisallowOverscroll" value="true"/>
     <hook src="hooks/hookers.js" type="before_prepare"/>
     <hook src="hooks/beforedep.js" type="before_deploy"/>
-    <name>igitabo-app</name>
+    <name>igitabo</name>
     <description>
-        Brand new cordova project!
+        Book library app
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="ntfreddy@gmail.com" href="http://cordova.io">
         Apache Cordova Team
     </author>
     <content src="index.html"/>
@@ -21,6 +21,11 @@
     <allow-intent href="mailto:*"/>
     <allow-intent href="geo:*"/>
     <platform name="android">
+        <icon background="res/icon/android/mipmap-mdpi/ic_launcher_adaptive_back.png" density="mdpi" foreground="res/icon/android/mipmap-mdpi/ic_launcher_adaptive_fore.png"/>
+        <icon background="res/icon/android/mipmap-hdpi/ic_launcher_adaptive_back.png" density="hdpi" foreground="res/icon/android/mipmap-hdpi/ic_launcher_adaptive_fore.png"/>
+        <icon background="res/icon/android/mipmap-xhdpi/ic_launcher_adaptive_back.png" density="xhdpi" foreground="res/icon/android/mipmap-xhdpi/ic_launcher_adaptive_fore.png"/>
+        <icon background="res/icon/android/mipmap-xxhdpi/ic_launcher_adaptive_back.png" density="xxhdpi" foreground="res/icon/android/mipmap-xxhdpi/ic_launcher_adaptive_fore.png"/>
+        <icon background="res/icon/android/mipmap-xxxhdpi/ic_launcher_adaptive_back.png" density="xxxhdpi" foreground="res/icon/android/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png"/>
         <allow-intent href="market:*"/>
     </platform>
     <platform name="ios">
